@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		931EE5EB2BCD0261006132CA /* CalTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EA2BCD0261006132CA /* CalTodoApp.swift */; };
-		931EE5ED2BCD0261006132CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EC2BCD0261006132CA /* ContentView.swift */; };
+		931EE5ED2BCD0261006132CA /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EC2BCD0261006132CA /* CalenderView.swift */; };
 		931EE5EF2BCD0262006132CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EE5EE2BCD0262006132CA /* Assets.xcassets */; };
 		931EE5F22BCD0262006132CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EE5F12BCD0262006132CA /* Preview Assets.xcassets */; };
 		931EE5FC2BCD0262006132CA /* CalTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5FB2BCD0262006132CA /* CalTodoTests.swift */; };
 		931EE6062BCD0262006132CA /* CalTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6052BCD0262006132CA /* CalTodoUITests.swift */; };
 		931EE6082BCD0262006132CA /* CalTodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6072BCD0262006132CA /* CalTodoUITestsLaunchTests.swift */; };
+		931EE6152BCD0298006132CA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6142BCD0298006132CA /* HeaderView.swift */; };
+		931EE6172BCD161C006132CA /* PlusTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6162BCD161C006132CA /* PlusTodoView.swift */; };
+		931EE63A2BCE21D2006132CA /* HCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6392BCE21D2006132CA /* HCalendarView.swift */; };
+		931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63B2BCE24D0006132CA /* DailyView.swift */; };
+		931EE63E2BCE2F30006132CA /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63D2BCE2F30006132CA /* TaskRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		931EE5E72BCD0261006132CA /* CalTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931EE5EA2BCD0261006132CA /* CalTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTodoApp.swift; sourceTree = "<group>"; };
-		931EE5EC2BCD0261006132CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		931EE5EC2BCD0261006132CA /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		931EE5EE2BCD0262006132CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931EE5F12BCD0262006132CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		931EE5F72BCD0262006132CA /* CalTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		931EE6012BCD0262006132CA /* CalTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931EE6052BCD0262006132CA /* CalTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTodoUITests.swift; sourceTree = "<group>"; };
 		931EE6072BCD0262006132CA /* CalTodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		931EE6142BCD0298006132CA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		931EE6162BCD161C006132CA /* PlusTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusTodoView.swift; sourceTree = "<group>"; };
+		931EE6392BCE21D2006132CA /* HCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCalendarView.swift; sourceTree = "<group>"; };
+		931EE63B2BCE24D0006132CA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		931EE63D2BCE2F30006132CA /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				931EE5EA2BCD0261006132CA /* CalTodoApp.swift */,
-				931EE5EC2BCD0261006132CA /* ContentView.swift */,
+				931EE5EC2BCD0261006132CA /* CalenderView.swift */,
+				931EE6142BCD0298006132CA /* HeaderView.swift */,
+				931EE6162BCD161C006132CA /* PlusTodoView.swift */,
+				931EE6392BCE21D2006132CA /* HCalendarView.swift */,
+				931EE63B2BCE24D0006132CA /* DailyView.swift */,
+				931EE63D2BCE2F30006132CA /* TaskRowView.swift */,
 				931EE5EE2BCD0262006132CA /* Assets.xcassets */,
 				931EE5F02BCD0262006132CA /* Preview Content */,
 			);
@@ -257,7 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931EE5ED2BCD0261006132CA /* ContentView.swift in Sources */,
+				931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */,
+				931EE5ED2BCD0261006132CA /* CalenderView.swift in Sources */,
+				931EE6152BCD0298006132CA /* HeaderView.swift in Sources */,
+				931EE63E2BCE2F30006132CA /* TaskRowView.swift in Sources */,
+				931EE6172BCD161C006132CA /* PlusTodoView.swift in Sources */,
+				931EE63A2BCE21D2006132CA /* HCalendarView.swift in Sources */,
 				931EE5EB2BCD0261006132CA /* CalTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
