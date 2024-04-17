@@ -19,6 +19,7 @@
 		931EE63A2BCE21D2006132CA /* HCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6392BCE21D2006132CA /* HCalendarView.swift */; };
 		931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63B2BCE24D0006132CA /* DailyView.swift */; };
 		931EE63E2BCE2F30006132CA /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63D2BCE2F30006132CA /* TaskRowView.swift */; };
+		931EE6BB2BCEDAFD006132CA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6BA2BCEDAFD006132CA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		931EE6392BCE21D2006132CA /* HCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCalendarView.swift; sourceTree = "<group>"; };
 		931EE63B2BCE24D0006132CA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
 		931EE63D2BCE2F30006132CA /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		931EE6BA2BCEDAFD006132CA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		931EE5E92BCD0261006132CA /* CalTodo */ = {
 			isa = PBXGroup;
 			children = (
+				931EE6B92BCEDAF0006132CA /* Model */,
 				931EE5EA2BCD0261006132CA /* CalTodoApp.swift */,
 				931EE5EC2BCD0261006132CA /* CalenderView.swift */,
 				931EE6142BCD0298006132CA /* HeaderView.swift */,
@@ -140,6 +143,14 @@
 				931EE6072BCD0262006132CA /* CalTodoUITestsLaunchTests.swift */,
 			);
 			path = CalTodoUITests;
+			sourceTree = "<group>";
+		};
+		931EE6B92BCEDAF0006132CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				931EE6BA2BCEDAFD006132CA /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931EE6BB2BCEDAFD006132CA /* Task.swift in Sources */,
 				931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */,
 				931EE5ED2BCD0261006132CA /* CalenderView.swift in Sources */,
 				931EE6152BCD0298006132CA /* HeaderView.swift in Sources */,
