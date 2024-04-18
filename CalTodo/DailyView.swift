@@ -3,31 +3,58 @@ import SwiftUI
 
 struct DailyView: View {
     
-//    @State private var tasks: [Task] = sampleTask.sorted(by: { $1.creationDate > $0.creationDate })
+    @State var tasks: [Todo]
+//    @State private var selectedTask: Task?
+    @State private var isShowingEditView = false
+    
+//    @State private var currentDate: Date = .init()
+    
+//    var selectedDate: Date
+    
+    
     
     var body: some View {
-        HCalendarView()
-        
-        ScrollView(.vertical) {
+        NavigationStack{
             VStack {
-                // tasks view
-//                TasksView()
+                HCalendarView()
+                //            .background(Color.cyan)
+                
+                ScrollView(.vertical) {
+                    VStack {
+                        // tasks view
+                        TasksView()
+                    }
+                    //            .padding(.top)
+                    .hSpacing(.center)
+                    .vSpacing(.center)
+                }
+                .scrollIndicators(.hidden)
             }
         }
-        .scrollIndicators(.hidden)
-        
     }
     
-//    @ViewBuilder
-//    func TasksView() -> some View {
-//        VStack(alignment: .leading, spacing: 35) {
-//            ForEach($tasks) { $task in
-//                TaskRowView(task: $task)
-//            }
-//        }
-//    }
+    // Tasks View
+    @ViewBuilder
+    func TasksView() -> some View {
+        VStack(alignment: .leading, spacing: 35) {
+            ForEach($tasks) { $task in
+                TaskRowView(task: $task)
+                    .background(alignment: .leading) {
+                        if tasks.last?.id != task.id {
+                            Rectangle()
+                                .frame(width: 1)
+                                .offset(x: 8)
+                                .padding(.bottom, -35)
+                        }
+                    }
+            }
+        }
+        .padding([.vertical, .leading], 15)
+        .padding(.top, 15)
+        
+    }
 }
 
-#Preview {
-    DailyView()
-}
+//#Preview {
+//    DailyView(tasks: [Todo(taskTitle: "", creationDate: Date(), tint: "customRed", memo: "memo")])
+//}

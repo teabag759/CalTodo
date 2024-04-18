@@ -1,22 +1,22 @@
 
 import SwiftUI
 
-struct PlusTodoView: View {
+struct EditTodoView: View {
     @Environment(\.dismiss) private var dismiss
     @State var title: String = ""
     @State var memo: String = ""
     //    @State var startDate: Date = .init()
     @State var startDate: Date = Date()
     @State var startTime: Date = Date()
-    @State var endDate: Date = Date()
-    @State var endTime: Date = Date()
+//    @State var endDate: Date = Date()
+//    @State var endTime: Date = Date()
 //    @State var currentDate: Date = Date()
     //    @State var showingDatePicker01 = false
     //    @State var showingDatePicker02 = false
     @State private var taskColor: Color = .cyan
-    @State private var selectedColor: String = "blue"
-    
+//    @Binding var task: Task
     @ObservedObject var taskManager: TaskManager = TaskManager()
+    @State private var selectedColor: String = "blue"
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -36,9 +36,16 @@ struct PlusTodoView: View {
         HStack {
             Spacer()
             Button(action: {
+                
+            }, label: {
+                Image(systemName: "trash")
+            })
+            
+            Button(action: {
                 let newTask = Todo(taskTitle: title, creationDate: startDate, isCompleted: false, tint: selectedColor, memo: memo)
                 taskManager.saveTask(newTask)
                 dismiss()
+
             }, label: {
                 Text("저장")
                     .font(.title3)
@@ -55,8 +62,7 @@ struct PlusTodoView: View {
             HStack {
                 Image(systemName: "clock")
                     .foregroundColor(.black)
-                HStack{
-                    //                VStack {
+//                VStack {
                     DatePicker("", selection: $startDate, displayedComponents: .date)
                         .datePickerStyle(.compact)
                     //.padding()
@@ -66,8 +72,7 @@ struct PlusTodoView: View {
                     //.padding()
                         .labelsHidden()
                     
-                    //                }
-                }
+//                }
                 //                .onTapGesture {
                 //                    self.showingDatePicker01 = true
                 //                    self.showingDatePicker02 = false
@@ -97,14 +102,10 @@ struct PlusTodoView: View {
             
             VStack(alignment: .leading, spacing: 8, content: {
                 let colors: [Color] = [.customRed, .customBlue, .customPink, .customGreen, .customOrange, .customYellow]
-                let colorNames: [String] = ["customRed", "customBlue", "customPink", "customGreen", "customOrange", "customYellow"]
-
                 
                 HStack(spacing: 0) {
                     Spacer()
-                    ForEach(colors.indices, id: \.self) { index in
-                        let color = colors[index]
-                        let colorName = colorNames[index]
+                    ForEach(colors, id: \.self) { color in
                         Circle()
                             .fill(color)
                             .frame(width: 20, height: 20)
@@ -118,15 +119,13 @@ struct PlusTodoView: View {
                             .onTapGesture {
                                 withAnimation(.snappy) {
                                     taskColor = color
-                                    selectedColor = colorName
                                 }
                             }
                     }
                     Spacer()
                 }
-                .frame(width: 200)
             })
-
+            .frame(width: 200)
             
             VStack(alignment: .leading) {
                 HStack {
@@ -143,6 +142,7 @@ struct PlusTodoView: View {
                     .padding(.trailing)
 //                    .background(Color.red)
                     .font(.system(size: 20))
+                    .keyboardType(.default)
                 //                        .bold()
             }
         }
@@ -151,8 +151,8 @@ struct PlusTodoView: View {
 
 
 
-//
+
 //#Preview {
-//    PlusTodoView()
+//    EditTodoView()
 //        .background(Color.white)
 //}

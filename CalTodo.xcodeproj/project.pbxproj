@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		931EE5EB2BCD0261006132CA /* CalTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EA2BCD0261006132CA /* CalTodoApp.swift */; };
-		931EE5ED2BCD0261006132CA /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EC2BCD0261006132CA /* CalenderView.swift */; };
+		931EE5ED2BCD0261006132CA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5EC2BCD0261006132CA /* CalendarView.swift */; };
 		931EE5EF2BCD0262006132CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EE5EE2BCD0262006132CA /* Assets.xcassets */; };
 		931EE5F22BCD0262006132CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EE5F12BCD0262006132CA /* Preview Assets.xcassets */; };
 		931EE5FC2BCD0262006132CA /* CalTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE5FB2BCD0262006132CA /* CalTodoTests.swift */; };
@@ -19,7 +19,12 @@
 		931EE63A2BCE21D2006132CA /* HCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6392BCE21D2006132CA /* HCalendarView.swift */; };
 		931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63B2BCE24D0006132CA /* DailyView.swift */; };
 		931EE63E2BCE2F30006132CA /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE63D2BCE2F30006132CA /* TaskRowView.swift */; };
-		931EE6BB2BCEDAFD006132CA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6BA2BCEDAFD006132CA /* Task.swift */; };
+		931EE6BB2BCEDAFD006132CA /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6BA2BCEDAFD006132CA /* Todo.swift */; };
+		931EE6BE2BCF6088006132CA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6BD2BCF6088006132CA /* Date+Extensions.swift */; };
+		931EE6C02BCF6093006132CA /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6BF2BCF6093006132CA /* View+Extensions.swift */; };
+		931EE6C22BD093AD006132CA /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EE6C12BD093AD006132CA /* EditTodoView.swift */; };
+		939C87732BD0F89900572EDC /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C87722BD0F89900572EDC /* TaskManager.swift */; };
+		939C87752BD117CA00572EDC /* BUCalander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C87742BD117CA00572EDC /* BUCalander.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,7 @@
 /* Begin PBXFileReference section */
 		931EE5E72BCD0261006132CA /* CalTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931EE5EA2BCD0261006132CA /* CalTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalTodoApp.swift; sourceTree = "<group>"; };
-		931EE5EC2BCD0261006132CA /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		931EE5EC2BCD0261006132CA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		931EE5EE2BCD0262006132CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931EE5F12BCD0262006132CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		931EE5F72BCD0262006132CA /* CalTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +60,12 @@
 		931EE6392BCE21D2006132CA /* HCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCalendarView.swift; sourceTree = "<group>"; };
 		931EE63B2BCE24D0006132CA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
 		931EE63D2BCE2F30006132CA /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
-		931EE6BA2BCEDAFD006132CA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		931EE6BA2BCEDAFD006132CA /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		931EE6BD2BCF6088006132CA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		931EE6BF2BCF6093006132CA /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		931EE6C12BD093AD006132CA /* EditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoView.swift; sourceTree = "<group>"; };
+		939C87722BD0F89900572EDC /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		939C87742BD117CA00572EDC /* BUCalander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCalander.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 				931EE5E92BCD0261006132CA /* CalTodo */,
 				931EE5FA2BCD0262006132CA /* CalTodoTests */,
 				931EE6042BCD0262006132CA /* CalTodoUITests */,
+				939C87742BD117CA00572EDC /* BUCalander.swift */,
 				931EE5E82BCD0261006132CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,14 +117,16 @@
 		931EE5E92BCD0261006132CA /* CalTodo */ = {
 			isa = PBXGroup;
 			children = (
+				931EE6BC2BCF606E006132CA /* Helpers */,
 				931EE6B92BCEDAF0006132CA /* Model */,
 				931EE5EA2BCD0261006132CA /* CalTodoApp.swift */,
-				931EE5EC2BCD0261006132CA /* CalenderView.swift */,
+				931EE5EC2BCD0261006132CA /* CalendarView.swift */,
 				931EE6142BCD0298006132CA /* HeaderView.swift */,
 				931EE6162BCD161C006132CA /* PlusTodoView.swift */,
 				931EE6392BCE21D2006132CA /* HCalendarView.swift */,
 				931EE63B2BCE24D0006132CA /* DailyView.swift */,
 				931EE63D2BCE2F30006132CA /* TaskRowView.swift */,
+				931EE6C12BD093AD006132CA /* EditTodoView.swift */,
 				931EE5EE2BCD0262006132CA /* Assets.xcassets */,
 				931EE5F02BCD0262006132CA /* Preview Content */,
 			);
@@ -148,9 +161,19 @@
 		931EE6B92BCEDAF0006132CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				931EE6BA2BCEDAFD006132CA /* Task.swift */,
+				931EE6BA2BCEDAFD006132CA /* Todo.swift */,
+				939C87722BD0F89900572EDC /* TaskManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		931EE6BC2BCF606E006132CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				931EE6BD2BCF6088006132CA /* Date+Extensions.swift */,
+				931EE6BF2BCF6093006132CA /* View+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,14 +306,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931EE6BB2BCEDAFD006132CA /* Task.swift in Sources */,
+				931EE6BB2BCEDAFD006132CA /* Todo.swift in Sources */,
 				931EE63C2BCE24D0006132CA /* DailyView.swift in Sources */,
-				931EE5ED2BCD0261006132CA /* CalenderView.swift in Sources */,
+				931EE6C02BCF6093006132CA /* View+Extensions.swift in Sources */,
+				931EE6BE2BCF6088006132CA /* Date+Extensions.swift in Sources */,
+				931EE5ED2BCD0261006132CA /* CalendarView.swift in Sources */,
 				931EE6152BCD0298006132CA /* HeaderView.swift in Sources */,
+				939C87732BD0F89900572EDC /* TaskManager.swift in Sources */,
 				931EE63E2BCE2F30006132CA /* TaskRowView.swift in Sources */,
+				931EE6C22BD093AD006132CA /* EditTodoView.swift in Sources */,
 				931EE6172BCD161C006132CA /* PlusTodoView.swift in Sources */,
 				931EE63A2BCE21D2006132CA /* HCalendarView.swift in Sources */,
 				931EE5EB2BCD0261006132CA /* CalTodoApp.swift in Sources */,
+				939C87752BD117CA00572EDC /* BUCalander.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CalTodo/Preview Content\"";
+				DEVELOPMENT_TEAM = 223UXY9RY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -482,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CalTodo/Preview Content\"";
+				DEVELOPMENT_TEAM = 223UXY9RY6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

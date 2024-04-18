@@ -5,7 +5,8 @@ import SwiftUI
 struct CalTodoApp: App {
     var body: some Scene {
         WindowGroup {
-            CalenderView()
+            CalendarView()
         }
+//        .modelContainer(for: Task.self)
     }
 }

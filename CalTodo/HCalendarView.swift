@@ -5,25 +5,34 @@ struct HCalendarView: View {
     private let calendar = Calendar.current
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            
-            monthView
-//            NavigationStack{
-//                monthView
-//            }
-            
-            ZStack {
-                dayView
-                blurView
+        NavigationStack{
+            VStack(alignment: .center, spacing: 20) {
+                
+                monthView
+                //            NavigationStack{
+                //                monthView
+                //            }
+                
+                ZStack {
+                    dayView
+                    blurView
+                }
+                .frame(height: 30)
+                .padding(.horizontal, 20)
             }
-            .frame(height: 30)
-            .padding(.horizontal, 20)
         }
+//        .background(Color.red)
     }
     
     // MARK: - 월 표시 뷰
     private var monthView: some View {
         HStack(spacing: 30) {
+            Image(systemName: "plus.app")
+                .font(.title2)
+                .foregroundColor(.black)
+                .opacity(0.0)
+                .padding(.leading, 5)
+            
             Button(
                 action: {
                     changeMonth(-1)
@@ -37,7 +46,7 @@ struct HCalendarView: View {
             Text(monthTitle(from: selectedDate))
                 .font(.title)
 //            
-//            NavigationLink(destination: CalenderView()){
+//            NavigationLink(destination: CalendarView()){
 //                Text(monthTitle(from: selectedDate))
 //                    .font(.title)
 //            }
@@ -52,7 +61,17 @@ struct HCalendarView: View {
                         .padding()
                 }
             )
+            
+            NavigationLink(destination: PlusTodoView()) {
+                Image(systemName: "plus.app")
+                    .font(.title2)
+                    .foregroundColor(.black)
+                    .padding(.trailing, 5)
+//                    .background(Color.red)
+            }
         }
+        .frame(width: 400)
+//        .background(Color.blue)
     }
     
     // MARK: - 일자 표시 뷰
@@ -85,6 +104,7 @@ struct HCalendarView: View {
                 }
             }
         }
+//        .background(Color.red)
     }
     
     // MARK: - 블러 뷰
@@ -151,6 +171,6 @@ private extension HCalendarView {
     }
 }
 
-#Preview {
-    HCalendarView()
-}
+//#Preview {
+//    HCalendarView()
+//}
